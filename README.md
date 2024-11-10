@@ -1,10 +1,10 @@
-#Greenery Segmentation with Gabor Filters and Random Forest
+##Greenery Segmentation with Gabor Filters and Random Forest
 
 This repository contains code for segmenting greenery regions in images by applying Gabor filters for feature extraction and using a Random Forest classifier for pixel classification. The project is designed to classify pixels as part of greenery regions (green, yellow, or brown vegetation) or as non-greenery, aiding in vegetation segmentation tasks.
 
 The project performs segmentation on images to identify and classify greenery regions. It uses Gabor filters to extract texture features based on frequency, orientation, and other parameters. The model then leverages a Random Forest classifier to predict greenery segmentation on test images.
 
-#Installation
+##Installation
 
 To get started, clone the repository and install the required packages:
 
@@ -15,7 +15,6 @@ Directory Structure
 
 The project expects the following directory structure for training data and masks:
 
-gothic/
 ├── data/
 │   ├── train/            # Training images
 │   └── mask/             # Mask images for labeling
