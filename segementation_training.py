@@ -63,7 +63,7 @@ def GYB_mask(cv2_img):
     return cv2.bitwise_and(cv2_img, cv2_img, mask=mask)[:,:,2]
 
 # Load and preprocess training images for feature extraction
-path = "data1/train/"
+path = "data/train/"
 train_dataset = pd.DataFrame()
 
 for train_img in os.listdir(path):
@@ -77,7 +77,7 @@ for train_img in os.listdir(path):
 
 # Load and preprocess masks for labeling
 mask_df = pd.DataFrame()
-path_to_masks = 'data1/mask/'
+path_to_masks = 'data/mask/'
 
 for mask_img in os.listdir(path_to_masks):
     if mask_img != '.DS_Store':
